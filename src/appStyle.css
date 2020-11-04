@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  #logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #logo-heading {
+    height: 200px;
+    margin: 20px 27% 150px;
+  }
+  #pokemon-img {
+    height: 300px;
+    margin: 20px 40%;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+  }
+  #app-container {
+    position: relative;
+  }
+  /* #app-container::before {
+    content: "";
+    position: absolute;
+    bottom: 20vh;
+    right: 0;
+    z-index: 1;
+    width: 600px;
+    height: 600px;
+    background: url("https://lh3.googleusercontent.com/proxy/WQnZN4qHkxhqDcFAXh-v5ptqp7I6P8e0oRiH9H2y4Z1wrIdTadn4JMCt7Ul2XQagrPZnfponyCOki3IQJB-V__gX");
+    background-size: 600px 600px;
+    object-fit: contain;
+  } */
+  
+  #list-container li {
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    padding-left: 4vw;
+    background-color: #ffcb05;
+    color: #17427b;
+    text-transform: capitalize;
+  }
+  #list-container li img {
+    width: 100px;
+    margin-right: 4vw;
+  }
+  
+  #list-heading {
+    font-family: "Grandstander", cursive;
+    font-weight: bold;
+    color: #ffcb05;
+    /* font-family: "Itim", cursive; */
+  }
+  #search-container {
+    border: 1px solid #ffcb05;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #search-container i {
+    background-color: #17427b;
+    padding: 4px 8px;
+    color: #ffcb05;
+  }
+  #search-container input {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    width: 215px;
+  }
+  #search-and-heading {
+    background-color: #17427b;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media only screen and (max-width: 992px) {
+    #pokemon-img {
+      height: 300px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    #logo-heading {
+      height: 200px;
+      margin: 20px 0 230px;
+    }
+  
+    #search-and-heading {
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #logo-heading {
+      height: 100px;
+      height: 25vw;
+      margin: 20px 5% 20%;
+    }
+    #pokemon-img {
+      height: 25vw;
+      margin: 20px 40%;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+    }
+    #list-heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    #search-container {
+      width: 90%;
+    }
+  
+    #search-container input {
+      border: none;
+      outline: none;
+      padding: 0 10px;
+      width: 87%;
+    }
+  }
+  
