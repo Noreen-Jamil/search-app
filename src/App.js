@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getPokemonList } from "./apiService";
-import "./app.css";
+import "./appStyle.css";
 
 export default function App() {
   const [arrayOfPokemon, updateArrayOfPokemon] = useState([]);
